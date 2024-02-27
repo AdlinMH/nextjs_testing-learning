@@ -20,10 +20,18 @@ test("button clicked and changes the color", () => {
 
   // find an element with a role of button and ext of "Change to Blue"
   const colorButton = screen.getByRole('button', { name: "Change to Blue" })
+
   act(() => {
     /* fire events that update state */
     colorButton.click()
   });
+
   // expect the background color to be blue
   expect(colorButton).toHaveStyle({ backgroundColor: 'blue' })
 })
+
+
+
+// 1. cari yang mau di cek
+// 2. optional > lakukan act terhadap 
+// 3.
